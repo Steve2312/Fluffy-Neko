@@ -27,7 +27,7 @@ public class GameStateManager {
 
     public GameStateManager() {
         states = new GameState[6];
-        //states[INTRO] = new IntroState(this);
+        states[INTRO] = new IntroState(this);
 
         // Load all levels
         File levels = new File("images/all_levels");
@@ -36,7 +36,7 @@ public class GameStateManager {
 
         //states[MENU] = new MenuState(this);
         //states[PLAY] = new PlayState(this);
-        states[LEVEL] = new LevelState(this, all_grid_x[2], all_grid_y[2], listOfFiles[2].toString());
+        //states[LEVEL] = new LevelState(this, all_grid_x[2], all_grid_y[2], listOfFiles[2].toString());
     }
 
     public void pop(int state) {
